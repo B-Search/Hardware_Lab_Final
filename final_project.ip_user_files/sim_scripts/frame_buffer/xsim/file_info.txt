@@ -1,0 +1,2 @@
+frame_buffer.v,verilog,xil_defaultlib,../../../../final_project.gen/sources_1/ip/frame_buffer/sim/frame_buffer.v,incdir="../../../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef"
+glbl.v,Verilog,xil_defaultlib,glbl.v
