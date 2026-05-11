@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
-| Date         : Mon May 11 13:01:09 2026
+| Date         : Mon May 11 14:01:38 2026
 | Host         : LAPTOP-R0BHEVVO running 64-bit major release  (build 9200)
 | Command      : report_methodology -file top_module_methodology_drc_routed.rpt -pb top_module_methodology_drc_routed.pb -rpx top_module_methodology_drc_routed.rpx
 | Design       : top_module
@@ -23,12 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max checks: <unlimited>
-             Checks found: 83
+             Checks found: 80
 +-----------+------------------+------------------------------------------------------------------+--------+
 | Rule      | Severity         | Description                                                      | Checks |
 +-----------+------------------+------------------------------------------------------------------+--------+
 | TIMING-6  | Critical Warning | No common primary clock between related clocks                   | 4      |
-| TIMING-17 | Critical Warning | Non-clocked sequential cell                                      | 74     |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                                      | 71     |
 | HPDR-1    | Warning          | Port pin direction inconsistency                                 | 1      |
 | TIMING-56 | Warning          | Missing logically or physically excluded clock groups constraint | 4      |
 +-----------+------------------+------------------------------------------------------------------+--------+
@@ -362,65 +362,50 @@ Related violations: <none>
 
 TIMING-17#62 Critical Warning
 Non-clocked sequential cell  
-The clock pin capture/first_byte_reg[0]/C is not reached by a timing clock
+The clock pin capture/first_byte_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#63 Critical Warning
 Non-clocked sequential cell  
-The clock pin capture/first_byte_reg[1]/C is not reached by a timing clock
+The clock pin capture/first_byte_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#64 Critical Warning
 Non-clocked sequential cell  
-The clock pin capture/first_byte_reg[2]/C is not reached by a timing clock
+The clock pin capture/first_byte_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#65 Critical Warning
 Non-clocked sequential cell  
-The clock pin capture/first_byte_reg[3]/C is not reached by a timing clock
+The clock pin capture/first_byte_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#66 Critical Warning
 Non-clocked sequential cell  
-The clock pin capture/first_byte_reg[4]/C is not reached by a timing clock
+The clock pin capture/first_byte_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#67 Critical Warning
 Non-clocked sequential cell  
-The clock pin capture/first_byte_reg[5]/C is not reached by a timing clock
+The clock pin capture/h_cnt_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#68 Critical Warning
 Non-clocked sequential cell  
-The clock pin capture/first_byte_reg[6]/C is not reached by a timing clock
+The clock pin capture/href_prev_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#69 Critical Warning
 Non-clocked sequential cell  
-The clock pin capture/first_byte_reg[7]/C is not reached by a timing clock
+The clock pin capture/v_cnt_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#70 Critical Warning
 Non-clocked sequential cell  
-The clock pin capture/h_cnt_reg[0]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#71 Critical Warning
-Non-clocked sequential cell  
-The clock pin capture/href_prev_reg/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#72 Critical Warning
-Non-clocked sequential cell  
-The clock pin capture/v_cnt_reg[0]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#73 Critical Warning
-Non-clocked sequential cell  
 The clock pin capture/vsync_prev_reg/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-17#74 Critical Warning
+TIMING-17#71 Critical Warning
 Non-clocked sequential cell  
 The clock pin capture/we_reg/C is not reached by a timing clock
 Related violations: <none>

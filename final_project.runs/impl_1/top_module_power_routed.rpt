@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
-| Date             : Mon May 11 13:01:11 2026
+| Date             : Mon May 11 14:01:39 2026
 | Host             : LAPTOP-R0BHEVVO running 64-bit major release  (build 9200)
 | Command          : report_power -file top_module_power_routed.rpt -pb top_module_power_summary_routed.pb -rpx top_module_power_routed.rpx
 | Design           : top_module
@@ -53,14 +53,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |       12 |       --- |             --- |
-| Slice Logic    |    <0.001 |      727 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      311 |     20800 |            1.50 |
+| Slice Logic    |    <0.001 |      724 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      309 |     20800 |            1.49 |
 |   CARRY4       |    <0.001 |       18 |      8150 |            0.22 |
-|   Register     |    <0.001 |      201 |     41600 |            0.48 |
+|   Register     |    <0.001 |      198 |     41600 |            0.48 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
 |   F7/F8 Muxes  |    <0.001 |       22 |     32600 |            0.07 |
 |   Others       |     0.000 |       94 |       --- |             --- |
-| Signals        |    <0.001 |      656 |       --- |             --- |
+| Signals        |    <0.001 |      653 |       --- |             --- |
 | Block RAM      |     0.003 |     28.5 |        50 |           57.00 |
 | MMCM           |     0.135 |        1 |         5 |           20.00 |
 | I/O            |     0.004 |       34 |       106 |           32.08 |

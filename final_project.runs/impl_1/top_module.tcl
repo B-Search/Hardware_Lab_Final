@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "C:/Users/Lenovo/Desktop/hw/final_project/final_project.runs/impl_1/top_module.tcl"
+  variable script "C:/Users/Lenovo/Desktop/final_project/final_project.runs/impl_1/top_module.tcl"
   variable category "vivado_impl"
 }
 
@@ -106,6 +106,7 @@ set rc [catch {
   create_msg_db init_design.pb
   set_param general.usePosixSpawnForFork 1
   set_param chipscope.maxJobs 4
+  set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 14  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tcpg236-1
@@ -115,18 +116,18 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/Lenovo/Desktop/hw/final_project/final_project.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Lenovo/Desktop/hw/final_project/final_project.xpr [current_project]
-  set_property ip_output_repo C:/Users/Lenovo/Desktop/hw/final_project/final_project.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/Lenovo/Desktop/final_project/final_project.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Lenovo/Desktop/final_project/final_project.xpr [current_project]
+  set_property ip_output_repo C:/Users/Lenovo/Desktop/final_project/final_project.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/Lenovo/Desktop/hw/final_project/final_project.runs/synth_1/top_module.dcp
-  read_ip -quiet C:/Users/Lenovo/Desktop/hw/final_project/final_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-  read_ip -quiet C:/Users/Lenovo/Desktop/hw/final_project/final_project.srcs/sources_1/ip/frame_buffer/frame_buffer.xci
+  add_files -quiet C:/Users/Lenovo/Desktop/final_project/final_project.runs/synth_1/top_module.dcp
+  read_ip -quiet C:/Users/Lenovo/Desktop/final_project/final_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+  read_ip -quiet C:/Users/Lenovo/Desktop/final_project/final_project.srcs/sources_1/ip/frame_buffer/frame_buffer.xci
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/Lenovo/Desktop/hw/final_project/final_project.srcs/constrs_1/new/constraint.xdc
+  read_xdc C:/Users/Lenovo/Desktop/final_project/final_project.srcs/constrs_1/new/constraint.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

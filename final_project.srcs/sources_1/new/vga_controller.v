@@ -48,9 +48,9 @@ module vga_controller(
 
     always @(posedge clk_vga) begin
         if (active_d2) begin
-            vga_r <= frame_data[15:12];
-            vga_g <= frame_data[10:7];
-            vga_b <= frame_data[4:1];
+            vga_r <= frame_data[15:12]; // R[4:0] → เอา 4 bits บน
+            vga_g <= frame_data[10:7];  // G[5:0] → เอา 4 bits บน  
+            vga_b <= frame_data[4:1];   // B[4:0] → เอา 4 bits บน
         end else begin
             vga_r <= 4'd0;
             vga_g <= 4'd0;

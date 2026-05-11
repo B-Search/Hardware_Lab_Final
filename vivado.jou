@@ -3,12 +3,12 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Mon May 11 13:59:44 2026
-# Process ID         : 36112
-# Current directory  : C:/Users/Lenovo/Desktop/final_project/final_project.runs/synth_1
-# Command line       : vivado.exe -log top_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
-# Log file           : C:/Users/Lenovo/Desktop/final_project/final_project.runs/synth_1/top_module.vds
-# Journal file       : C:/Users/Lenovo/Desktop/final_project/final_project.runs/synth_1\vivado.jou
+# Start of session at: Mon May 11 13:31:59 2026
+# Process ID         : 31052
+# Current directory  : C:/Users/Lenovo/Desktop/final_project
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent4944 C:\Users\Lenovo\Desktop\final_project\final_project.xpr
+# Log file           : C:/Users/Lenovo/Desktop/final_project/vivado.log
+# Journal file       : C:/Users/Lenovo/Desktop/final_project\vivado.jou
 # Running On         : LAPTOP-R0BHEVVO
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26200
@@ -19,6 +19,8 @@
 # Host memory        : 25439 MB
 # Swap memory        : 1610 MB
 # Total Virtual      : 27049 MB
-# Available Virtual  : 8169 MB
+# Available Virtual  : 11541 MB
 #-----------------------------------------------------------
-source top_module.tcl -notrace
+start_gui
+open_project C:/Users/Lenovo/Desktop/final_project/final_project.xpr
+update_compile_order -fileset sources_1

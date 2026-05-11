@@ -69,7 +69,7 @@ module camera_capture(
                 end else begin
                     byte_cnt <= 0;
                     if ((h_cnt[0] == 1'b0) && (v_cnt[0] == 1'b0)) begin
-                        dout <= {first_byte, d};
+                        dout <= {first_byte, b};
                         we <= 1;
                         if (addr == FRAME_PIXELS - 1) begin
                             addr <= 0;
