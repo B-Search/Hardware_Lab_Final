@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
-| Date         : Mon May 11 14:01:10 2026
-| Host         : LAPTOP-R0BHEVVO running 64-bit major release  (build 9200)
+| Date         : Tue May 12 12:40:55 2026
+| Host         : LAPTOP-7HQDBOQJ running 64-bit major release  (build 9200)
 | Command      : report_drc -file top_module_drc_opted.rpt -pb top_module_drc_opted.pb -rpx top_module_drc_opted.rpx
 | Design       : top_module
 | Device       : xc7a35tcpg236-1
@@ -24,15 +24,21 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max checks: <unlimited>
-             Checks found: 1
-+--------+----------+---------------------------------+--------+
-| Rule   | Severity | Description                     | Checks |
-+--------+----------+---------------------------------+--------+
-| RPBF-3 | Warning  | IO port buffering is incomplete | 1      |
-+--------+----------+---------------------------------+--------+
+             Checks found: 2
++--------+----------+------------------------------------------------+--------+
+| Rule   | Severity | Description                                    | Checks |
++--------+----------+------------------------------------------------+--------+
+| PLIO-3 | Warning  | Placement Constraints Check for IO constraints | 1      |
+| RPBF-3 | Warning  | IO port buffering is incomplete                | 1      |
++--------+----------+------------------------------------------------+--------+
 
 2. REPORT DETAILS
 -----------------
+PLIO-3#1 Warning
+Placement Constraints Check for IO constraints  
+Partially locked IO Bus is found. Following components of the IO Bus sw[15:0] are not locked:  sw[15] sw[14] sw[13] sw[12] sw[11] sw[10] sw[9] sw[8] sw[7] sw[6] sw[5] sw[4] sw[3]
+Related violations: <none>
+
 RPBF-3#1 Warning
 IO port buffering is incomplete  
 Device port siod expects both input and output buffering but the buffers are incomplete.

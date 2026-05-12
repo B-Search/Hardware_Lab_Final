@@ -23,6 +23,7 @@
 module top_module(
         input clk,
         input reset,
+        input [15:0] sw,
         //vga
         output vga_hsync,
         output vga_vsync,
@@ -125,7 +126,10 @@ module top_module(
     );
     
  vga_controller vga_control(
-     .clk_vga(clk_vga_out),
+     .clk_vga(clk_vga_out), 
+     .sw0(sw[0]),
+     .sw1(sw[1]),
+     .sw2(sw[2]),
      .hsync(vga_hsync),
      .vsync(vga_vsync),
      .vga_r(vga_r),

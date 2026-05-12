@@ -50,13 +50,13 @@ module camera_config(
             8'd18: rom_data_word = 16'h1A_7A; // VSTOP
             8'd19: rom_data_word = 16'h03_0A; // VREF
 
-            8'd20: rom_data_word = 16'h4F_B3; // MTX1
-            8'd21: rom_data_word = 16'h50_B3; // MTX2
-            8'd22: rom_data_word = 16'h51_00; // MTX3
-            8'd23: rom_data_word = 16'h52_3D; // MTX4
-            8'd24: rom_data_word = 16'h53_A7; // MTX5
-            8'd25: rom_data_word = 16'h54_E4; // MTX6
-            8'd26: rom_data_word = 16'h58_9E; // MTXS
+            8'd20: rom_data_word = 16'h4F_80; // MTX1: คืนค่ากลาง (Default)
+            8'd21: rom_data_word = 16'h50_80; // MTX2: คืนค่ากลาง (Default)
+            8'd22: rom_data_word = 16'h51_00; 
+            8'd23: rom_data_word = 16'h52_22; 
+            8'd24: rom_data_word = 16'h53_5E; 
+            8'd25: rom_data_word = 16'h54_80; // MTX6: คืนค่ากลาง (Default)
+            8'd26: rom_data_word = 16'h58_9E;
 
             8'd27: rom_data_word = 16'h13_EF; // COM8
             8'd28: rom_data_word = 16'h00_00; // GAIN
@@ -84,7 +84,7 @@ module camera_config(
             8'd49: rom_data_word = 16'h88_D7;
             8'd50: rom_data_word = 16'h89_E8;
 
-            8'd51: rom_data_word = 16'h41_08; // COM16
+            8'd51: rom_data_word = 16'h41_08;// COM16
             8'd52: rom_data_word = 16'h76_E1;
             8'd53: rom_data_word = 16'h33_0B;
             8'd54: rom_data_word = 16'h3C_78;
@@ -95,9 +95,9 @@ module camera_config(
             8'd59: rom_data_word = 16'hB2_0E;
             8'd60: rom_data_word = 16'hB3_82;
 
-            8'd61: rom_data_word = 16'h67_80;
-            8'd62: rom_data_word = 16'h68_80;
-            8'd63: rom_data_word = 16'h56_40;
+            8'd61: rom_data_word = 16'h67_D8; // U Gain: ดันขึ้นจาก C0 -> D8 (เพิ่มความสดสีฟ้า/เหลือง)
+            8'd62: rom_data_word = 16'h68_D8; // V Gain: ดันขึ้นจาก C0 -> D8 (เพิ่มความสดสีแดง/เขียว)
+            8'd63: rom_data_word = 16'h56_40;// Saturation V: ค่ากลางๆ
             8'd64: rom_data_word = 16'h15_00; // COM10
             8'd65: rom_data_word = 16'h13_EF; // COM8 repeat
             8'd66: rom_data_word = 16'h0E_61; // COM6
@@ -105,7 +105,7 @@ module camera_config(
             8'd68: rom_data_word = 16'h1E_07; // MVFP
             8'd69: rom_data_word = 16'h42_00; // COM17: no test pattern
 
-            8'd70: rom_data_word = 16'hFF_FF; // end
+            8'd70: rom_data_word = 16'hFF_FF;
             default: rom_data_word = 16'hFF_FF;
         endcase
     end
